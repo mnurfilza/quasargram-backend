@@ -40,7 +40,7 @@ app.get('/posts', async (req, res) => {
   res.status(200).json(posts)
 })
 
-app.post('/posts', async (req, res) => {
+app.post('/createPosts', async (req, res) => {
   res.set('Access-Control-Allow-Origin', '*')
   const uuid = UUID();
   var busboy = new Busboy({ headers: req.headers });
